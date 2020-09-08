@@ -11,6 +11,7 @@ return elements in Last In First Out order.
    implementing a Stack?
 """
 
+
 class Node:
     def __init__(self, value=None, next_node=None):
         self.value = value
@@ -104,10 +105,10 @@ class Stack:
 
     def push(self, value):
         self.storage.add_to_tail(value)
-        self.size +=1
+        self.size += 1
 
     def pop(self):
         if self.size == 0:
             return None
-        self.size -=1
+        self.size -= 1
         return self.storage.remove_tail()
